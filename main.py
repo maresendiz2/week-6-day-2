@@ -262,10 +262,19 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # queue videos
 #what is iteration?
 #what are for loops?
-my_list = ['a', 'b', 'c', 'd']
-for letter in my_list:
-  letter_number = my_list.index(letter) + 1
-  print(f"letter {letter_number}: {letter}")
+# my_list = ['a', 'b', 'c', 'd']
+# for letter in my_list:
+#   letter_number = my_list.index(letter) + 1
+#   print(f"letter {letter_number}: {letter}")
+
+my_list = ["paul", "laura", "jacob", "louis", "julia"]
+
+for name in my_list:
+  if name.startswith("l"):
+    print(name)
+  else:
+    print("this name does not begin with l")
+
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
@@ -279,8 +288,10 @@ for items in students:
 # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
 
 list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
+for number in list_numbers:
 
-sum_numbers
+  print(sum(list_numbers))
+sum_numbers 
   
 
 
