@@ -108,6 +108,54 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 
 
 ########################################decision making in python#####################################
+#lessons
+
+# if 5 == 2:
+#   print("it is correct")
+# else:
+#   print("it is not correct")
+
+# pet = "dog"
+# if pet == "cat":
+#   print("you have a cat")
+# elif pet == "dog":
+#   print("you have a dog")
+# else:
+#   print("I dont know what animal you have")
+
+# age = 16
+# schoolGrade = 9
+# if age < 18:
+#   print("you are a minor")
+#   if schoolGrade >= 7:
+#     print("passed")
+#   else:
+#     print("failed")
+
+# else:
+#   print("you are an adult")
+
+#enter you name
+# name = input("What is your name? ")
+# #enter your relatives name
+# relaName = input("What is one of your relatives name? ")
+# #enter your age
+# age = int(input("What is your age? "))
+# # if age is less than 20 print I am youg
+# if age < 20:
+#   print("I am young.")
+
+# elif age < 30:
+#   print("I am Vicenarian.")
+
+# elif age < 40:
+#   print("I am Tricenarian.")
+
+# elif age < 50:
+#   print("I am quadragenarian.")
+
+# else:
+#   print("I am old.")
 
 
 
@@ -125,13 +173,16 @@ seconds = [1.23, 1.45, 1.02, 1.11]
 # if num1 == num2:
 #   print("num1 and num2 are equal")
 # You must display the value of the user input instead of num1 and num2.
-num1 = input("Enter a number:")
-num2 = input("Enter another number:")
-
- "{num1} is greater than {num2}"
-# "num2 is greater than num1"
-# "num1 and num2 are equal"
-
+# num1 = input("Enter a number:")
+# num2 = input("Enter another number:")
+# if num1 > num2:
+#  print(num1 + " is greater than " + num2)
+# # "num2 is greater than num1"
+# if num2 > num1:
+#   print(num2 + " is greater than " + num1)
+# # "num1 and num2 are equal"
+# if num1 == num2:
+#   print(num1 + " and " + num2 + " are equal")
 
 # Decision Making Practice #2
 # The laws of a certain country establish that an adult can drive if they are of legal age (18 years or older), and have a driver's license.
@@ -145,14 +196,14 @@ num2 = input("Enter another number:")
 # "You can't drive. You need to have a license"
 
 # Use the code base already provided to set up the appropriate flow control structure and check those conditions.
-age = 16
-has_license = False
-
-"You can drive"
-
-"You can't drive yet. You must be 18 years old and have a license"
-
-"You can't drive. You need to have a license"
+# age = 16
+# has_license = False
+# if age >= 18 and has_license is True:
+#  print("You can drive")
+# elif age < 17 and has_license is False:
+#  print("You can't drive yet. You must be 18 years old and have a license")
+# elif age >= 18 and has_license is False:
+#  print("You can't drive. You need to have a license")
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
@@ -170,42 +221,51 @@ has_license = False
 # Use the code already provided to set up the appropriate flow control structure and check those conditions. Evaluate a candidate who knows French, but does not know how to program in Python.
 
 
-speak_french = True
-knows_python = False
-
-"You meet the requirements to apply"
-
-"To apply, you need to know how to program in Python and speak French"
-
-"To apply, you need to speak French"
-
-"To apply, you need to know how to program in Python"
-
-
-# Decision Making Practice #4
-# Enter your name
-
-# Enter your relatives name
-# Enter your age
-
-# If age is less than 20 print i am young
-
-# If age is less than 30 then print iam vicenarian
-
-# If age is less than 40 then print i am a tricenarian
-
-# If age is less than 50 then print I am quadragenarian
+# speak_french = True
+# knows_python = False
+# if speak_french is True and knows_python is True:
+#  print("You meet the requirements to apply")
+# elif speak_french is False and knows_python is False:
+#  print("To apply, you need to know how to program in Python and speak French")
+# elif speak_french is False and knows_python is True:
+#  print("To apply, you need to speak French")
+# elif speak_french is True and knows_python is False:
+#  print("To apply, you need to know how to program in Python")
 
 
-# Decision Making Practice #1
-# ask the user for their age
-# if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+# # Decision Making Practice #4
+# # Enter your name
 
+# # Enter your relatives name
+# # Enter your age
+
+# # If age is less than 20 print i am young
+
+# # If age is less than 30 then print iam vicenarian
+
+# # If age is less than 40 then print i am a tricenarian
+
+# # If age is less than 50 then print I am quadragenarian
+
+
+# # Decision Making Practice #1
+# # ask the user for their age
+# # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+
+
+# age = int(input("What is your age? "))
+# if age >= 18 and age <= 21:
+#   print("You can vote.")
+# else:
+#   print("Better luck next time!")
 ###################################loops intro######################################
 # queue videos
 #what is iteration?
 #what are for loops?
-
+my_list = ['a', 'b', 'c', 'd']
+for letter in my_list:
+  letter_number = my_list.index(letter) + 1
+  print(f"letter {letter_number}: {letter}")
 
 # For Loops Practice #1
 # Using For loops, greet all members of a class, printing "Hello" + their name.
@@ -213,15 +273,15 @@ knows_python = False
 # For example: "Hello Norville"
 
 students = ["Norville", "Fred", "Velma", "Daphne"]
-
-
-
-
+for items in students:
+  print("Hello " + items)
 # For Loops Practice #2
 # Given the following list of numbers, calculate the sum of all the numbers using For loops and store the result of the sum in a variable called sum_numbers:
 
 list_numbers = [1,5,8,7,6,8,2,5,2,6,4,8,5,9,8,3,5,4,2,5,6,4]
-# sum_numbers = 
+
+sum_numbers
+  
 
 
 
